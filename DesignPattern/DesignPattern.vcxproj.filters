@@ -1,144 +1,51 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="源文件">
+    <Filter Include="Source Files">
       <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
       <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
-    <Filter Include="头文件">
+    <Filter Include="Header Files">
       <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
       <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
     </Filter>
-    <Filter Include="资源文件">
+    <Filter Include="Resource Files">
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="源文件\Command">
-      <UniqueIdentifier>{110e2502-09dd-472f-b247-01c114657051}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="源文件\Command\command">
-      <UniqueIdentifier>{fedbf51b-8566-486e-ba3e-22f3cdf8adac}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="源文件\Command\macroCommand">
-      <UniqueIdentifier>{742820ac-5b76-40d4-93a4-2f42363c5a26}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="源文件\Command\myClass1">
-      <UniqueIdentifier>{d1a0d897-07ed-4ecf-a4bb-07b21a845779}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="源文件\Command\myClass2">
-      <UniqueIdentifier>{7198994a-92e0-4623-ad75-86156529a7ba}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="源文件\Command\simpleCommand">
-      <UniqueIdentifier>{83bc2f99-928d-48f2-912a-3e09f284fa94}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="源文件\Factory+Singleton+Observer">
-      <UniqueIdentifier>{0ecbce2d-9b8f-4552-9365-e4dd1c6c53de}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="源文件\Factory+Singleton+Observer\document">
-      <UniqueIdentifier>{ce06ada5-6071-4b33-ad6c-e6698761b932}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="源文件\Factory+Singleton+Observer\mydoc">
-      <UniqueIdentifier>{0052cc31-e122-4445-bc57-ef35d4bb4fed}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="源文件\Factory+Singleton+Observer\application">
-      <UniqueIdentifier>{a8c141cd-96fa-4b48-a2e8-b60c0ad55645}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="源文件\Factory+Singleton+Observer\myApp">
-      <UniqueIdentifier>{55fa1150-919a-401c-84e3-99c1511f1339}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="源文件\Factory+Singleton+Observer\openCommand">
-      <UniqueIdentifier>{7e312912-bc94-46bc-bb23-09205e2a76f6}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="源文件\Factory+Singleton+Observer\pasteCommand">
-      <UniqueIdentifier>{941809ff-56f9-40ce-b847-53efc9b3b0bc}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="源文件\Factory+Singleton+Observer\view">
-      <UniqueIdentifier>{3e40cd1d-7b9f-4c5e-afb7-56fd50e104dd}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="源文件\Factory+Singleton+Observer\myView">
-      <UniqueIdentifier>{e7ed2cba-e5b3-4695-9c56-4a0dda5edd02}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="application\application.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="command\command.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="framework\framework.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="myClass\myClass.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="testCase1.cpp">
-      <Filter>源文件\Command</Filter>
+      <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="testCase2.cpp">
-      <Filter>源文件\Factory+Singleton+Observer</Filter>
-    </ClCompile>
-    <ClCompile Include="command.cpp">
-      <Filter>源文件\Command\command</Filter>
-    </ClCompile>
-    <ClCompile Include="macroCommand.cpp">
-      <Filter>源文件\Command\macroCommand</Filter>
-    </ClCompile>
-    <ClCompile Include="myClass1.cpp">
-      <Filter>源文件\Command\myClass1</Filter>
-    </ClCompile>
-    <ClCompile Include="myClass2.cpp">
-      <Filter>源文件\Command\myClass2</Filter>
-    </ClCompile>
-    <ClCompile Include="document.cpp">
-      <Filter>源文件\Factory+Singleton+Observer\document</Filter>
-    </ClCompile>
-    <ClCompile Include="myDoc.cpp">
-      <Filter>源文件\Factory+Singleton+Observer\mydoc</Filter>
-    </ClCompile>
-    <ClCompile Include="application.cpp">
-      <Filter>源文件\Factory+Singleton+Observer\application</Filter>
-    </ClCompile>
-    <ClCompile Include="myApp.cpp">
-      <Filter>源文件\Factory+Singleton+Observer\myApp</Filter>
-    </ClCompile>
-    <ClCompile Include="openCommand.cpp">
-      <Filter>源文件\Factory+Singleton+Observer\openCommand</Filter>
-    </ClCompile>
-    <ClCompile Include="pasteCommand.cpp">
-      <Filter>源文件\Factory+Singleton+Observer\pasteCommand</Filter>
-    </ClCompile>
-    <ClCompile Include="myView.cpp">
-      <Filter>源文件\Factory+Singleton+Observer\myView</Filter>
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="command.h">
-      <Filter>源文件\Command\command</Filter>
+    <ClInclude Include="application\application.h">
+      <Filter>Source Files</Filter>
     </ClInclude>
-    <ClInclude Include="macroCommand.h">
-      <Filter>源文件\Command\macroCommand</Filter>
+    <ClInclude Include="command\command.h">
+      <Filter>Source Files</Filter>
     </ClInclude>
-    <ClInclude Include="myClass1.h">
-      <Filter>源文件\Command\myClass1</Filter>
+    <ClInclude Include="framework\framework.h">
+      <Filter>Source Files</Filter>
     </ClInclude>
-    <ClInclude Include="myClass2.h">
-      <Filter>源文件\Command\myClass2</Filter>
-    </ClInclude>
-    <ClInclude Include="simpleCommand.h">
-      <Filter>源文件\Command\simpleCommand</Filter>
-    </ClInclude>
-    <ClInclude Include="document.h">
-      <Filter>源文件\Factory+Singleton+Observer\document</Filter>
-    </ClInclude>
-    <ClInclude Include="myDoc.h">
-      <Filter>源文件\Factory+Singleton+Observer\mydoc</Filter>
-    </ClInclude>
-    <ClInclude Include="application.h">
-      <Filter>源文件\Factory+Singleton+Observer\application</Filter>
-    </ClInclude>
-    <ClInclude Include="myApp.h">
-      <Filter>源文件\Factory+Singleton+Observer\myApp</Filter>
-    </ClInclude>
-    <ClInclude Include="openCommand.h">
-      <Filter>源文件\Factory+Singleton+Observer\openCommand</Filter>
-    </ClInclude>
-    <ClInclude Include="pasteCommand.h">
-      <Filter>源文件\Factory+Singleton+Observer\pasteCommand</Filter>
-    </ClInclude>
-    <ClInclude Include="view.h">
-      <Filter>源文件\Factory+Singleton+Observer\view</Filter>
-    </ClInclude>
-    <ClInclude Include="myView.h">
-      <Filter>源文件\Factory+Singleton+Observer\myView</Filter>
+    <ClInclude Include="myClass\myClass.h">
+      <Filter>Source Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

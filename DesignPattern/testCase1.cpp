@@ -1,10 +1,7 @@
 #include"command/command.h"
-#include"macroCommand/macroCommand.h"
-#include"simpleCommand/simpleCommand.h"
-#include"myClass1/myClass1.h"
-#include"myClass2/myClass2.h"
+#include"myClass/myClass.h"
 
-int testCase1() {
+int main() {
 	std::cout << "test SimpleCommand<>...\n";
 	MyClass1 receiver1;
 	Command* cmd1 = new SimpleCommand<MyClass1>(&receiver1, &MyClass1::action);

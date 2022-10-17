@@ -1,8 +1,19 @@
 #pragma once
 #include<iostream>
+#include<list>
 
-#ifndef __SIMPLE_COMMAND_H__
-#define __SIMPLE_COMMAND_H__
+#ifndef __COMMAND_H__
+#define __COMMAND_H__
+class Command {
+public:
+	virtual ~Command();
+	//define pure virtual function here.
+	virtual void execute() = 0;
+	/* virtual void execute(std::initializer_list<int>) = 0;
+	[¡ü if you want to pass some parameters,write just like this.] */
+protected:
+	Command();
+};
 
 template<class Receiver>
 class SimpleCommand : public Command {
@@ -37,4 +48,16 @@ void SimpleCommand<Receiver> ::execute(std::initializer_list<int> inizer) {
 }
 [¡ü if you want to pass some parameters,write just like this.]*/
 
-#endif // !__SIMPLE_COMMAND_H__
+class MacroCommand : public Command {
+private:
+	//container
+	std::list<Command*> _cmds;
+public:
+	virtual void add(Command* c);
+	virtual void remove(Command* c);
+	virtual void execute();
+	/*virtual void execute(std::initializer_list<int> inizer);
+	[¡ü if you want to pass some parameters,write just like this.]*/
+};
+
+#endif // !__COMMAND_H__
