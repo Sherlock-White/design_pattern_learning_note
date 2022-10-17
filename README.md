@@ -18,12 +18,12 @@
 │   ├── simpleCommand           // Command派生类  
 │   └── testCase1.cpp           // 测试  
 └── Factory+Singleton+Observer  
-    ├── application             // 基类  
-    ├── document                // 基类  
-    ├── myApp                   // Application派生类  
-    ├── myDoc                   // Document派生类     
-    ├── myView                  // View派生类  
-    ├── openCommand             // Command派生类  
-    ├── pasteCommand            // Command派生类     
-    ├── view                    // 基类  
-    └── testCase2.cpp           // 测试  
+│   ├── application             // 基类  
+│   ├── document                // 基类  
+│   ├── myApp                   // Application派生类  
+│   ├── myDoc                   // Document派生类  
+│   ├── myView                  // View派生类  
+│   ├── openCommand             // Command派生类  
+│   ├── pasteCommand            // Command派生类  
+│   ├── view                    // 基类  
+│   └── testCase2.cpp           // 测试  
