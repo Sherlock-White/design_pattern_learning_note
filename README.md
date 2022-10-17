@@ -9,11 +9,6 @@
 
 ## 项目结构 
 
->|--Factory+Singleton+Observer   
-     |--openCommand[Command派生类]  
-     |--pasteCommand[Command派生类]  
-     |--view[基类]  
-     |--testCase2.cpp[测试]  
 ├── README.md  
 ├── Command  
 │   ├── command                 // 基类  
