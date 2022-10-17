@@ -1,7 +1,7 @@
 #pragma once
 #ifndef __MY_VIEW_H__
 #define __MY_VIEW_H__
-#include"myDoc.h"
+#include"../myDoc/myDoc.h"
 
 class MyView : public View {
 private:

@@ -1,8 +1,8 @@
 #pragma once
 #ifndef __PASTE_COMMAND_H__
 #define __PASTE_COMMAND_H__
-#include"command.h"
-#include"document.h"
+#include"../../Command/command/command.h"
+#include"../document/document.h"
 
 class PasteCommand :public Command {
 private:

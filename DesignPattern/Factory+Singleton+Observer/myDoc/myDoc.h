@@ -1,7 +1,7 @@
 #pragma once
 #ifndef __MY_DOC_H__
 #define __MY_DOC_H__
-#include"document.h"
+#include"../document/document.h"
 #include<string>
 #include<iostream>
 

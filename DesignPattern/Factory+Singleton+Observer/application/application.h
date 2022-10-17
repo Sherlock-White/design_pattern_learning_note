@@ -2,7 +2,7 @@
 #ifndef __APPLICATION_H__
 #define __APPLICATION_H__
 #include<list>
-#include"document.h"
+#include"../document/document.h"
 #include<string>
 
 class Application {

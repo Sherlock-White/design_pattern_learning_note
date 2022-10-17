@@ -4,7 +4,7 @@
 #include<iostream>
 #include<string>
 #include<list>
-#include"view.h"
+#include"../view/view.h"
 
 class Document {
 private:

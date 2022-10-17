@@ -1,8 +1,8 @@
-#include"command.h"
-#include"macroCommand.h"
-#include"simpleCommand.h"
-#include"myClass1.h"
-#include"myClass2.h"
+#include"command/command.h"
+#include"macroCommand/macroCommand.h"
+#include"simpleCommand/simpleCommand.h"
+#include"myClass1/myClass1.h"
+#include"myClass2/myClass2.h"
 
 int testCase1() {
 	std::cout << "test SimpleCommand<>...\n";

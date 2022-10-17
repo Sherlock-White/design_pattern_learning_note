@@ -1,8 +1,8 @@
 #pragma once
 #ifndef __OPEN_COMMAND_H__
 #define __OPEN_COMMAND_H__
-#include"command.h"
-#include"application.h"
+#include"../../Command/command/command.h"
+#include"../application/application.h"
 #include<string>
 #include<iostream>
 

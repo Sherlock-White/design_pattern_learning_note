@@ -1,5 +1,5 @@
 #pragma once
-#include"command.h"
+#include"../command/command.h"
 #include<list>
 
 #ifndef __MACRO_COMMAND_H__

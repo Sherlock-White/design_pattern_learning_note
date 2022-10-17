@@ -1,8 +1,8 @@
 #pragma once
 #ifndef __MY_APP_H__
 #define __MY_APP_H__
-#include"application.h"
-#include"myDoc.h"
+#include"../application/application.h"
+#include"../myDoc/myDoc.h"
 #include<string>
 #include<iostream>
 

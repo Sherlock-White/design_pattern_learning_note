@@ -1,8 +1,8 @@
-#include"myApp.h"
+#include"myApp/myApp.h"
 #include<iostream>
-#include"openCommand.h"
-#include"pasteCommand.h"
-#include"myView.h"
+#include"openCommand/openCommand.h"
+#include"pasteCommand/pasteCommand.h"
+#include"myView/myView.h"
 
 int testCase2() {
 	Application* app = new MyApp();
