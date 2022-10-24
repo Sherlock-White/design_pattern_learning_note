@@ -3,7 +3,40 @@
 #define __FRAMEWORK_H__
 #include<list>
 #include<string>
-#include"../command/command.h"
+#include"commandPattern.h"
+
+class Document;
+class Application;
+class View;
+class PasteCommand;
+class OpenCommand;
+
+class Document {
+private:
+	std::string _name;
+	bool _changed = false;
+protected:
+	//Observer
+	std::list<View*> _views;
+public:
+	Document(std::string& name) :_name(name) {
+		std::cout << "Document ctor.name:" << _name << std::endl;
+	}
+	//actually operation open and paste should be declared as virtual function
+	//and defined in derived class,but here just write like this for convenience
+	void open();
+	void paste();
+	virtual void Serialize();
+	virtual ~Document() {}
+	void attach(View* view);
+	void detach(View* view);
+	void notify();
+	virtual void changeData() = 0;
+	virtual int getState() = 0;
+	virtual void setState(int i) = 0;
+	void dataChanged();
+	virtual View* getLastView() = 0;
+};
 
 class Application {
 private:
@@ -20,30 +53,12 @@ public:
 	virtual ~Application();
 };
 
-class Document {
-private:
-	std::string _name;
-	//Observer
-	std::list<View*> _views;
-	bool _changed = false;
-public:
-	Document(std::string& name);
-	//actually operation open and paste should be declared as virtual function
-	//and defined in derived class,but here just write like this for convenience
-	void open();
-	void paste();
-	virtual void Serialize();
-	virtual ~Document() {}
-	void attach(View* view);
-	void detach(View* view);
-	void notify();
-	virtual void changeData() = 0;
-	void dataChanged();
-};
-
 //Observer 
 class View {
+protected:
+	Document* _subject;
 public:
+	View(Document* myDoc) :_subject(myDoc){}
 	virtual ~View() {}
 	virtual void update() = 0;
 };

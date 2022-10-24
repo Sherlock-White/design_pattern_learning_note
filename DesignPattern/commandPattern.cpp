@@ -1,12 +1,4 @@
-#include "command.h"
-
-Command::~Command() {
-	std::cout << "Command dtor \n";
-}
-
-Command::Command() {
-	std::cout << "Command ctor \n";
-}
+#include "commandPattern.h"
 
 void MacroCommand::add(Command* c) {
 	_cmds.push_back(c);

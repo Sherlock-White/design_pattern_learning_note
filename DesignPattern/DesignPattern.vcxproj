@@ -18,6 +18,22 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="application.h" />
+    <ClInclude Include="commandPattern.h" />
+    <ClInclude Include="compositePattern.h" />
+    <ClInclude Include="framework.h" />
+    <ClInclude Include="myClass.h" />
+    <ClInclude Include="strategyPattern.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="application.cpp" />
+    <ClCompile Include="commandPattern.cpp" />
+    <ClCompile Include="compositePattern.cpp" />
+    <ClCompile Include="framework.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="strategyPattern.cpp" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
@@ -138,20 +154,6 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="application\application.cpp" />
-    <ClCompile Include="command\command.cpp" />
-    <ClCompile Include="framework\framework.cpp" />
-    <ClCompile Include="myClass\myClass.cpp" />
-    <ClCompile Include="testCase1.cpp" />
-    <ClCompile Include="testCase2.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="application\application.h" />
-    <ClInclude Include="command\command.h" />
-    <ClInclude Include="framework\framework.h" />
-    <ClInclude Include="myClass\myClass.h" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

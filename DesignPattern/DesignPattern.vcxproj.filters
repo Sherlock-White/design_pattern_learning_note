@@ -15,37 +15,43 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="application\application.cpp">
+    <ClInclude Include="compositePattern.h">
       <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="command\command.cpp">
+    </ClInclude>
+    <ClInclude Include="framework.h">
       <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="framework\framework.cpp">
+    </ClInclude>
+    <ClInclude Include="myClass.h">
       <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="myClass\myClass.cpp">
+    </ClInclude>
+    <ClInclude Include="strategyPattern.h">
       <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="testCase1.cpp">
+    </ClInclude>
+    <ClInclude Include="application.h">
       <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="testCase2.cpp">
+    </ClInclude>
+    <ClInclude Include="commandPattern.h">
       <Filter>Source Files</Filter>
-    </ClCompile>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="application\application.h">
+    <ClCompile Include="framework.cpp">
       <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="command\command.h">
+    </ClCompile>
+    <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="framework\framework.h">
+    </ClCompile>
+    <ClCompile Include="strategyPattern.cpp">
       <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="myClass\myClass.h">
+    </ClCompile>
+    <ClCompile Include="application.cpp">
       <Filter>Source Files</Filter>
-    </ClInclude>
+    </ClCompile>
+    <ClCompile Include="commandPattern.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="compositePattern.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

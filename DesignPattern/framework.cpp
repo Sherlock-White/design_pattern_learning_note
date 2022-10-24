@@ -24,11 +24,6 @@ Application::~Application() {
 //remember initialize it in cpp file rather than head file
 int Application::_counter = 0;
 
-Document::Document(std::string& name) {
-	_name = name;
-	std::cout << "Document ctor.name:" << _name << std::endl;
-}
-
 void Document::open() {
 	std::cout << "Document::open()\n";
 	Serialize();

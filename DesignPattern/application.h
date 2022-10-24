@@ -1,9 +1,13 @@
 #pragma once
 #ifndef __APPLICATION_H__
 #define __APPLICATION_H__
-#include"../framework/framework.h"
+#include"framework.h"
 #include<string>
 #include<iostream>
+
+class MyApp;
+class MyDoc;
+class MyView;
 
 class MyApp :public Application {
 public:
@@ -17,14 +21,16 @@ public:
 	MyDoc(std::string& name) :Document(name), _subjectState(1) {}
 	virtual void Serialize();
 	virtual void changeData();
-	int getState();
+	virtual int getState();
+	virtual void setState(int i);
+	virtual View* getLastView();
 };
 
 class MyView : public View {
-private:
-	MyDoc* _subject;
 public:
-	MyView(MyDoc* myDoc);
+	MyView(Document* myDoc):View(myDoc){
+		_subject->attach(this);
+	}
 	virtual void update() override;
 };
 

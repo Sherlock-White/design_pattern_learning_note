@@ -19,9 +19,12 @@ int MyDoc::getState() {
 	return _subjectState;
 }
 
-MyView::MyView(MyDoc* myDoc) {
-	_subject = myDoc;
-	_subject->attach(this);
+void MyDoc::setState(int i) {
+	_subjectState = i;
+}
+
+View* MyDoc::getLastView() {
+	return _views.back();
 }
 
 void MyView::update() {
