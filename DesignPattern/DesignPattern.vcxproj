@@ -22,6 +22,7 @@
     <ClInclude Include="application.h" />
     <ClInclude Include="commandPattern.h" />
     <ClInclude Include="compositePattern.h" />
+    <ClInclude Include="flyweightPattern.h" />
     <ClInclude Include="framework.h" />
     <ClInclude Include="myClass.h" />
     <ClInclude Include="strategyPattern.h" />
@@ -30,6 +31,7 @@
     <ClCompile Include="application.cpp" />
     <ClCompile Include="commandPattern.cpp" />
     <ClCompile Include="compositePattern.cpp" />
+    <ClCompile Include="flyweightPattern.cpp" />
     <ClCompile Include="framework.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="strategyPattern.cpp" />

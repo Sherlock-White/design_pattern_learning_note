@@ -3,7 +3,7 @@
 #include"application.h"
 #include"strategyPattern.h"
 #include"compositePattern.h"
-
+#include"flyweightPattern.h"
 
 int testCommandPattern() {
 	std::cout << "test SimpleCommand<>...\n";
@@ -111,5 +111,17 @@ int testCompositePattern() {
 	catch(...){
 		std::cout << "[exception]" << std::endl;
 	}
+	return 0;
 }
 
+int main() {
+	std::cout << "main()--------------\n";
+	std::string str;
+	for (int i = 0; i < 3; i++) {
+		std::cout << "input #" << i << "string(using digits 0~9):";
+		std::cin >> str;
+		BigString(str).print();
+	}
+	std::cout << "main() exit---------\n";
+	return 0;
+}
