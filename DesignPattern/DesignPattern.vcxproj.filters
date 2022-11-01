@@ -36,6 +36,12 @@
     <ClInclude Include="flyweightPattern.h">
       <Filter>Source Files</Filter>
     </ClInclude>
+    <ClInclude Include="objectStructure.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="visitor.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="framework.cpp">
@@ -57,6 +63,12 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="flyweightPattern.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="objectStructure.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="visitor.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

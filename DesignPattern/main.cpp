@@ -4,6 +4,8 @@
 #include"strategyPattern.h"
 #include"compositePattern.h"
 #include"flyweightPattern.h"
+#include"visitor.h"
+#include"objectStructure.h"
 
 int testCommandPattern() {
 	std::cout << "test SimpleCommand<>...\n";
@@ -114,7 +116,7 @@ int testCompositePattern() {
 	return 0;
 }
 
-int main() {
+int testFlyWeightPattern() {
 	std::cout << "main()--------------\n";
 	std::string str;
 	for (int i = 0; i < 3; i++) {
@@ -123,5 +125,54 @@ int main() {
 		BigString(str).print();
 	}
 	std::cout << "main() exit---------\n";
+	return 0;
+}
+
+int main() {
+	Cabinet* cabinet = new Cabinet("PC Cabinet");
+	Chassis* chassis = new Chassis("PC Chassis");
+	Bus* bus = new Bus("MCA Bus");
+	cabinet->Add(chassis);
+	chassis->Add(bus);
+	chassis->Add(new FloppyDisk("3.5inch Floppy"));
+
+	cout << cabinet->Name() << "net price:" << cabinet->NetPrice() << endl;
+	cout << cabinet->Name() << "discount price:" << cabinet->DiscountPrice() << endl;
+	cout << cabinet->Name() << "Power(Watt):" << cabinet->Power() << endl;
+	cout << endl;
+	cout << chassis->Name() << "net price:" << chassis->NetPrice() << endl;
+	cout << chassis->Name() << "discount price:" << chassis->DiscountPrice() << endl;
+	cout << chassis->Name() << "Power(Watt):" << chassis->Power() << endl;
+	cout << endl;
+	
+	Card card("Hercules Card");
+	FloppyDisk floppyDisk("2.25in Floopy");
+	bus->Add(&card);
+	bus->Add(&floppyDisk);
+	cout << bus->Name() << "net price:" << bus->NetPrice() << endl;
+	cout << bus->Name() << "discount price:" << bus->DiscountPrice() << endl;
+	cout << bus->Name() << "power(watt):" << bus->Power() << endl;
+	cout << endl;
+	cout << card.Name() << "net price:" << card.NetPrice() << endl;
+	cout << card.Name() << "discount price:" << card.DiscountPrice() << endl;
+	cout << card.Name() << "Power(Watt):" << card.Power() << endl;
+	cout << endl;
+
+	VisitorPricing visitorPricing;
+	VisitorInventory visitorInventory;
+	chassis->Accept(visitorPricing);
+	cout << chassis->Name() << "Price:" << visitorPricing.GetTotalPrice() << endl;
+	chassis->Accept(visitorInventory);
+	cout << chassis->Name() << "Inventory:" << visitorInventory.GetInventory() << endl;
+
+	VisitorPricing2 visitorPricing2;
+	chassis->Accept(visitorPricing2);
+	cout << chassis->Name() << "Special Price:" << visitorPricing2.GetTotalPrice() << endl;
+
+	chassis->Add(&card);
+	delete cabinet;
+	delete chassis;
+	delete bus;
+
 	return 0;
 }

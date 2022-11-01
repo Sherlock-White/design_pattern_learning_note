@@ -25,7 +25,9 @@
     <ClInclude Include="flyweightPattern.h" />
     <ClInclude Include="framework.h" />
     <ClInclude Include="myClass.h" />
+    <ClInclude Include="objectStructure.h" />
     <ClInclude Include="strategyPattern.h" />
+    <ClInclude Include="visitor.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="application.cpp" />
@@ -34,7 +36,9 @@
     <ClCompile Include="flyweightPattern.cpp" />
     <ClCompile Include="framework.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="objectStructure.cpp" />
     <ClCompile Include="strategyPattern.cpp" />
+    <ClCompile Include="visitor.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
